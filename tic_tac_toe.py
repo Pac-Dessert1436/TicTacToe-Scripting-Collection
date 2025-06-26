@@ -115,7 +115,7 @@ def check_win(row: int, col: int) -> bool:
 def is_board_filled() -> bool:
     for i in range(3):
         for j in range(3):
-            if not board[i][j]:
+            if board[i][j] == 0:
                 return False
     return True
 
